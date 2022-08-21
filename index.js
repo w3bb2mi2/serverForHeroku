@@ -16,7 +16,7 @@ app.use(cors())
 mongoose
     .connect("mongodb+srv://LeeEduard:O930xt799@cluster0.3upkx3x.mongodb.net/?retryWrites=true&w=majority")
     .then(() => {
-        console.log("DB ok")
+        console.log("DB connected")
     })
     .catch(e => console.log(e))
 
