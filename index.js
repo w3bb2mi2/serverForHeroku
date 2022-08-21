@@ -14,7 +14,7 @@ import {checkAuth, handleValidationResult} from './utils/index.js'
 const app = express()
 app.use(cors())
 mongoose
-    .connect(process.env.MONGODB_URI)
+    .connect("mongodb+srv://LeeEduard:O930xt799@cluster0.3upkx3x.mongodb.net/?retryWrites=true&w=majority")
     .then(() => {
         console.log("DB ok")
     })
