@@ -59,7 +59,7 @@ app.patch("/posts/:id", postCreateValidation, checkAuth, PostController.update)
 
 
 
-app.listen(5000, (err) => {
+app.listen(process.env.PORT || 5000, (err) => {
     if (err) {
         return console.log(err)
     } else {
