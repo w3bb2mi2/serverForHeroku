@@ -13,7 +13,8 @@ import {checkAuth, handleValidationResult} from './utils/index.js'
 
 const app = express()
 app.use(cors())
-mongoose.connect('mongodb://localhost/newserver')
+mongoose
+    .connect(process.env.MONGODB_URI)
     .then(() => {
         console.log("DB ok")
     })
